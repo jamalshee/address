@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        Title>Sign Up</title>
+    </head>
+    <body>
+    <form action ="" method = "Port">
+            
+            <input type = "text" name = "name" placeholder = "Enter a name">
+            <input type = "email" name = "email" placeholder = "Enter email address">
+            <input type = "password" name = "password" placeholder = "Enter password">
+            <input type = "submit" = "submit" name = "Submit">
+            <form>
+                </head>
+    <body>
+        <?php
+        // put your code here
+        
+        
+        //$connect = mysqli_connect("localhost", "root", " ", "address");
+
+              if(isset($_POST['submit'])){
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    
+    $query="INSERT INTO address (name, email,password')VALUES)"
+            ('$name', '$email','$password');
+    $result = mysqli_query($connect, $query);
+    
+    if($result){
+        
+        echo 'Successfully registered';
+    } else {
+        echo 'Failed.Try again'; 
+        
+    }
+              } 
+   
+ 
+  
